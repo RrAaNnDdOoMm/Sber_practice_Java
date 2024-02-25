@@ -1,16 +1,16 @@
 package base;
 
 public class Base {
-	static void Task1() {
-		for (int i = 1; i<=14; i++) {
-			System.out.print(i*7 + " ");
+	private static void sequence7n() {
+		for (int multuplier = 1; multuplier<=14; multuplier++) {
+			System.out.print(multuplier*7 + " ");
 		}
 		System.out.println();
 		System.out.println();
 	}
 
 
-	static void Task2() {
+	private static void randomMatrixMaxAvg() {
 		int arrayLength = 10;
 		int randomArray[];
 		randomArray = new int[arrayLength];
@@ -29,14 +29,15 @@ public class Base {
 	}
 
 
-	static void Task3() {
+	private static void firstPrimes() {
 		int primes[];
-		primes = new int[100];
+		final int limit = 100;
+		primes = new int[limit];
 		primes[0] = 2;
 		int primesNum = 1;
 		int primeN;
 		
-		for (int natural = 3; natural < 100; natural++) {
+		for (int natural = 3; natural < limit; natural++) {
 			primeN = 0;
 			while ((primeN < primesNum) && (natural % primes[primeN] != 0)) {
 				primeN++;
@@ -46,14 +47,14 @@ public class Base {
 				primesNum++;
 			}
 		}
-		for (int i = 0; i < primesNum; i++) {
-			System.out.println(primes[i]);
+		for (primeN = 0; primeN < primesNum; primeN++) {
+			System.out.println(primes[primeN]);
 		}
 		System.out.println();
 	}
 
 
-	static void Task4() {
+	private static void starMatrix() {
 		int width = 5;
 		int height = 3;
 		
@@ -67,9 +68,9 @@ public class Base {
 	}
 	
 	public static void main(String[] args) {
-		Task1();
-		Task2();
-		Task3();
-		Task4(); 
+		sequence7n();
+		randomMatrixMaxAvg();
+		firstPrimes();
+		starMatrix(); 
 	}
 }
