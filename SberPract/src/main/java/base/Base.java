@@ -2,7 +2,7 @@ package base;
 
 public class Base {
 	private static void sequence7n() {
-		for (int multuplier = 1; multuplier<=14; multuplier++) {
+		for (int multuplier = 1; multuplier <= 14; multuplier++) {
 			System.out.print(multuplier*7 + " ");
 		}
 		System.out.println();
@@ -18,7 +18,7 @@ public class Base {
 		float average = 0;
 		
 		for (int elem : randomArray) {
-			elem = (int) Math.round(Math.random()*100);
+			elem = (int) Math.round(Math.random() * 100);
 			max = Math.max(max, elem);
 			average = average + elem;
 		}
