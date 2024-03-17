@@ -1,5 +1,3 @@
-target/
-.idea
-git/
-plan.txt
-*/memo.txt
+SberPract/.settings
+SberPract/.classpath
+SberPract/.project
