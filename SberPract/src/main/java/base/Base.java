@@ -55,7 +55,7 @@ public class Base {
 
 
 	private static void starMatrix() {
-		int width = 6;
+		int width = 5;
 		int height = 3;
 		
 		for (int y = 0; y < height; y++) {
